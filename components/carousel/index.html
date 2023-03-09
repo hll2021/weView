@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WVcarousel 轮播图 | 🔨 weView</title>
+    <meta name="description" content="A VitePress site">
+    <link rel="stylesheet" href="/assets/style.cfd994dd.css">
+    <link rel="modulepreload" href="/assets/app.41a73a12.js">
+    <link rel="modulepreload" href="/assets/components_carousel_index.md.52d21f69.lean.js">
+    
+    <meta name="twitter:title" content="WVcarousel 轮播图 | 🔨 weView">
+  <meta property="og:title" content="WVcarousel 轮播图 | 🔨 weView">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-a41f6be4><div class="sidebar-button" data-v-a41f6be4><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="🔨 weView, back to home" data-v-a41f6be4 data-v-0b4f746e><!----> 🔨 weView</a><div class="flex-grow" data-v-a41f6be4></div><div class="nav" data-v-a41f6be4><!----></div><!--[--><!--]--></header><aside class="sidebar" data-v-232a9276><!----><!--[--><!--]--><ul class="sidebar-links" data-v-232a9276><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="/">快速开始</a><!----></li><li class="sidebar-link"><p class="sidebar-link-item">通用</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/components/Button/">Button 按钮</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/components/Layout/">Layout 布局</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/components/Icon/">Icon 图标</a><!----></li></ul></li><li class="sidebar-link"><p class="sidebar-link-item">Form表单组件</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/components/DateTimePicker/">DateTimePicker 日期选择器</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/components/Input/">Input 输入框</a><!----></li></ul></li><li class="sidebar-link"><p class="sidebar-link-item">Data 数据展示</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/components/Table/">Table 表格</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/components/Pagination/">Pagination 分页</a><!----></li></ul></li><li class="sidebar-link"><p class="sidebar-link-item">Feedback 反馈组件</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/components/Notification/">Notification 通知</a><!----></li></ul></li><li class="sidebar-link"><p class="sidebar-link-item">Navigation 导航</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/components/Menu/">Menu 导航菜单</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/components/Dropdown/">Dropdown 下拉菜单</a><!----></li></ul></li><li class="sidebar-link"><p class="sidebar-link-item">Others 其他</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item active" href="/components/carousel/">carousel 轮播图</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="#基础用法">基础用法</a><!----></li></ul></li></ul></li><!--]--></ul><!--[--><!--]--></aside><div class="sidebar-mask"></div><main class="page" data-v-ec78b406><div class="container" data-v-ec78b406><!--[--><!--]--><div style="position:relative;" class="content" data-v-ec78b406><div><h1 id="wvcarousel-轮播图" tabindex="-1">WVcarousel 轮播图 <a class="header-anchor" href="#wvcarousel-轮播图" aria-hidden="true">#</a></h1><h2 id="基础用法" tabindex="-1">基础用法 <a class="header-anchor" href="#基础用法" aria-hidden="true">#</a></h2><p>基础的函数用法</p><div class="tip custom-block"><p class="custom-block-title">使用轮播图</p><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>WVcarousel</span> <span class="token attr-name">:sliders</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>result<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>WVcarousel</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ts<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&#39;16&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">imgUrl</span><span class="token operator">:</span>
+      <span class="token string">&#39;http://yjy-xiaotuxian-dev.oss-cn-beijing.aliyuncs.com/picture/2021-04-15/dfc11bb0-4af5-4e9b-9458-99f615cc685a.jpg&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hrefUrl</span><span class="token operator">:</span> <span class="token string">&#39;/category/1005000&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&#39;1&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&#39;19&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">imgUrl</span><span class="token operator">:</span>
+      <span class="token string">&#39;http://yjy-xiaotuxian-dev.oss-cn-beijing.aliyuncs.com/picture/2021-04-15/6d202d8e-bb47-4f92-9523-f32ab65754f4.jpg&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hrefUrl</span><span class="token operator">:</span> <span class="token string">&#39;/category/1013001&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&#39;1&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&#39;18&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">imgUrl</span><span class="token operator">:</span>
+      <span class="token string">&#39;http://yjy-xiaotuxian-dev.oss-cn-beijing.aliyuncs.com/picture/2021-04-15/1ba86bcc-ae71-42a3-bc3e-37b662f7f07e.jpg&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hrefUrl</span><span class="token operator">:</span> <span class="token string">&#39;/category/1013001&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&#39;1&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&#39;20&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">imgUrl</span><span class="token operator">:</span>
+      <span class="token string">&#39;http://yjy-xiaotuxian-dev.oss-cn-beijing.aliyuncs.com/picture/2021-04-15/e83efb1b-309c-46f7-98a3-f1fefa694338.jpg&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hrefUrl</span><span class="token operator">:</span> <span class="token string">&#39;/category/1005000&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&#39;1&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&#39;17&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">imgUrl</span><span class="token operator">:</span>
+      <span class="token string">&#39;http://yjy-xiaotuxian-dev.oss-cn-beijing.aliyuncs.com/picture/2021-04-15/4a79180a-1a5a-4042-8a77-4db0b9c800a8.jpg&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hrefUrl</span><span class="token operator">:</span> <span class="token string">&#39;/category/1019000&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&#39;1&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      result
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div></div><footer class="page-footer" data-v-ec78b406 data-v-5659c80a><div class="edit" data-v-5659c80a><div class="edit-link" data-v-5659c80a data-v-41bfe94e><!----></div></div><div class="updated" data-v-5659c80a><!----></div></footer><div class="next-and-prev-link" data-v-ec78b406 data-v-248c2e86><div class="container" data-v-248c2e86><div class="prev" data-v-248c2e86><a class="link" href="/components/Dropdown/" data-v-248c2e86><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-prev" data-v-248c2e86><path d="M19,11H7.4l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-7,7c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.2-0.1,0.5,0,0.8c0.1,0.1,0.1,0.2,0.2,0.3l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L7.4,13H19c0.6,0,1-0.4,1-1S19.6,11,19,11z"></path></svg><span class="text" data-v-248c2e86>Dropdown 下拉菜单</span></a></div><div class="next" data-v-248c2e86><!----></div></div></div><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"components_button_index.md\":\"4a8b9f69\",\"components_datetimepicker_index.md\":\"7ac8be9f\",\"components_dropdown_index.md\":\"2b52f795\",\"components_icon_index.md\":\"9eb4c70c\",\"components_input_index.md\":\"934e2d03\",\"components_layout_index.md\":\"337aeeb5\",\"components_menu_index.md\":\"7494901c\",\"components_notification_index.md\":\"8da40708\",\"components_pagination_index.md\":\"1b1ab0c8\",\"components_table_index.md\":\"70fb3426\",\"components_carousel_index.md\":\"52d21f69\",\"index.md\":\"6c4a441b\"}")</script>
+    <script type="module" async src="/assets/app.41a73a12.js"></script>
+    
+  </body>
+</html>
